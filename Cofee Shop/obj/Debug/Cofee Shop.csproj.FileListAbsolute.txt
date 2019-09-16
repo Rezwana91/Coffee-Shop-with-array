@@ -1,0 +1,20 @@
+C:\Ananna-Github\Cofee Shop\bin\Debug\Cofee Shop.exe.config
+C:\Ananna-Github\Cofee Shop\bin\Debug\Cofee Shop.exe
+C:\Ananna-Github\Cofee Shop\bin\Debug\Cofee Shop.pdb
+C:\Ananna-Github\Cofee Shop\obj\Debug\Cofee Shop.csprojAssemblyReference.cache
+C:\Ananna-Github\Cofee Shop\obj\Debug\Cofee_Shop.Cofee_Shop.resources
+C:\Ananna-Github\Cofee Shop\obj\Debug\Cofee_Shop.Properties.Resources.resources
+C:\Ananna-Github\Cofee Shop\obj\Debug\Cofee Shop.csproj.GenerateResource.cache
+C:\Ananna-Github\Cofee Shop\obj\Debug\Cofee Shop.csproj.CoreCompileInputs.cache
+C:\Ananna-Github\Cofee Shop\obj\Debug\Cofee Shop.exe
+C:\Ananna-Github\Cofee Shop\obj\Debug\Cofee Shop.pdb
+C:\Ananna-Github\Coffee shop_array\Cofee Shop\obj\Debug\Cofee Shop.csprojAssemblyReference.cache
+C:\Ananna-Github\Coffee shop_array\Cofee Shop\obj\Debug\Cofee_Shop.Cofee_Shop.resources
+C:\Ananna-Github\Coffee shop_array\Cofee Shop\obj\Debug\Cofee_Shop.Properties.Resources.resources
+C:\Ananna-Github\Coffee shop_array\Cofee Shop\obj\Debug\Cofee Shop.csproj.GenerateResource.cache
+C:\Ananna-Github\Coffee shop_array\Cofee Shop\obj\Debug\Cofee Shop.csproj.CoreCompileInputs.cache
+C:\Ananna-Github\Coffee shop_array\Cofee Shop\obj\Debug\Cofee Shop.exe
+C:\Ananna-Github\Coffee shop_array\Cofee Shop\obj\Debug\Cofee Shop.pdb
+C:\Ananna-Github\Coffee shop_array\Cofee Shop\bin\Debug\Cofee Shop.exe.config
+C:\Ananna-Github\Coffee shop_array\Cofee Shop\bin\Debug\Cofee Shop.exe
+C:\Ananna-Github\Coffee shop_array\Cofee Shop\bin\Debug\Cofee Shop.pdb
