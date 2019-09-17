@@ -29,10 +29,6 @@ namespace Cofee_Shop
 
         private void saveButton_Click(object sender, EventArgs e)
         {
-            
-            
-
-
            
 
                 if (customernameTextBox.Text != "" && contactnumberTextBox.Text != "" && addressTextBox.Text != "" &&
