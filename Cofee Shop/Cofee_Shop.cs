@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +12,9 @@ namespace Cofee_Shop
 {
     public partial class Cofee_Shop : Form
     {
+
+        int i = 0;
+
         public Cofee_Shop()
         {
             InitializeComponent();
@@ -19,77 +22,88 @@ namespace Cofee_Shop
 
         private void saveButton_Click(object sender, EventArgs e)
         {
-
-            int price = 0;
-            string name = "";
-            string number = "";
-            string address = "";
-            string order = "";
-            string quantity = "";
-
-             name = customer_nameTextBox.Text;
-             number = contact_numberTextBox.Text;
-             address = addressTextBox.Text;
-             order = orderComboBox.Text;
-             quantity = quantityTextBox.Text;
-
-            int Quantity = Convert.ToInt32(quantity);
+            
+            int[] price = new int[100];
+            string[] name = new string[100];
+            string[] number = new string[100];
+            string[] address = new string[100];
+            string[] order = new string[100];
+            string[] quantity = new string[100];
+            int[] Quantity = new int[100];
 
 
-            if (name != "" && number != "" && address != "" && order !="" && quantity!="")
-            {
-                if (order == "Black")
+           
+
+                if (customernameTextBox.Text != "" && contactnumberTextBox.Text != "" && addressTextBox.Text != "" &&
+                    orderComboBox.Text != "" && quantityTextBox.Text != "")
                 {
-                    price = Quantity * 120;
-                    MessageBox.Show("The bill is " + price + "Tk.");
+
+                    quantity[i] = "0";
+                    name[i] = customernameTextBox.Text;
+                    number[i] = contactnumberTextBox.Text;
+                    address[i] = addressTextBox.Text;
+                    order[i] = orderComboBox.Text;
+                    quantity[i] = quantityTextBox.Text;
+
+                    Quantity[i] = Convert.ToInt32(quantity[i]);
+
+                    if (orderComboBox.Text == "Black")
+                    {
+                        price[i] = Quantity[i] * 120;
+                        MessageBox.Show("The bill is " + price[i] + "Tk.");
+                    }
+
+                    else if (orderComboBox.Text == "Cold")
+                    {
+                        price[i] = Quantity[i] * 100;
+                        MessageBox.Show("The bill is " + price[i] + "Tk.");
+                    }
+
+                    else if (orderComboBox.Text == "Hot")
+                    {
+                        price[i] = Quantity[i] * 90;
+                        MessageBox.Show("The bill is " + price[i] + "Tk.");
+                    }
+
+                    else if (orderComboBox.Text == "Regular")
+                    {
+                        price[i] = Quantity[i] * 80;
+                        MessageBox.Show("The bill is " + price[i] + "Tk.");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Please fill the Order option");
+                    }
+
+
+
+                    displayRichTextBox.SelectedText = Environment.NewLine + "Customer Name :" + name[i];
+                    displayRichTextBox.SelectedText = Environment.NewLine + "Contact Number:" + number[i];
+                    displayRichTextBox.SelectedText = Environment.NewLine + "Address             :" + address[i];
+                    displayRichTextBox.SelectedText = Environment.NewLine + "Order                 :" + order[i];
+                    displayRichTextBox.SelectedText = Environment.NewLine + "Quantity            :" + quantity[i];
+                    displayRichTextBox.SelectedText =Environment.NewLine + "Price                 :" + price[i] + "Tk.";
+                    displayRichTextBox.SelectedText = Environment.NewLine + " ";
+
+                    MessageBox.Show("All data is saved");
+
+                    customernameTextBox.Text = "";
+                    contactnumberTextBox.Text = "";
+                    addressTextBox.Text = "";
+                    orderComboBox.Text = "";
+                    quantityTextBox.Text = "";
+
+                  
+
                 }
 
-                else if (order == "Cold")
-                {
-                    price = Quantity * 100;
-                    MessageBox.Show("The bill is " + price + "Tk.");
-                }
-
-                else if (order == "Hot")
-                {
-                    price = Quantity * 90;
-                    MessageBox.Show("The bill is " + price + "Tk.");
-                }
-
-                else if (order == "Regular")
-                {
-                    price = Quantity * 80;
-                    MessageBox.Show("The bill is " + price + "Tk.");
-                }
                 else
                 {
-                    MessageBox.Show("Please fill the Order option");
+                    MessageBox.Show("Please fillup all options");
                 }
 
 
-
-                displayRichTextBox.SelectedText = Environment.NewLine + "Customer Name :" + name;
-                displayRichTextBox.SelectedText = Environment.NewLine + "Contact Number:" + number;
-                displayRichTextBox.SelectedText = Environment.NewLine + "Address             :" + address;
-                displayRichTextBox.SelectedText = Environment.NewLine + "Order                 :" + order;
-                displayRichTextBox.SelectedText = Environment.NewLine + "Quantity            :" + quantity;
-                displayRichTextBox.SelectedText = Environment.NewLine + "Price                 :" + price + "Tk.";
-                displayRichTextBox.SelectedText = Environment.NewLine + "";
-
-                customer_nameTextBox.Text = "";
-                contact_numberTextBox.Text = "";
-                addressTextBox.Text = "";
-                orderComboBox.Text = "";
-                quantityTextBox.Text = "";
-
-                MessageBox.Show("All data is saved");
-
-
-            }
-            else
-            {
-                MessageBox.Show("Please fillup all options");
-            }
+                i++;
 
         }
     }
