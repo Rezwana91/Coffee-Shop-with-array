@@ -14,6 +14,13 @@ namespace Cofee_Shop
     {
 
         int i = 0;
+        int[] price = new int[100];
+        string[] name = new string[100];
+        string[] number = new string[100];
+        string[] address = new string[100];
+        string[] order = new string[100];
+        string[] quantity = new string[100];
+        int[] Quantity = new int[100];
 
         public Cofee_Shop()
         {
@@ -23,13 +30,7 @@ namespace Cofee_Shop
         private void saveButton_Click(object sender, EventArgs e)
         {
             
-            int[] price = new int[100];
-            string[] name = new string[100];
-            string[] number = new string[100];
-            string[] address = new string[100];
-            string[] order = new string[100];
-            string[] quantity = new string[100];
-            int[] Quantity = new int[100];
+            
 
 
            
